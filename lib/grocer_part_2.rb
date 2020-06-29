@@ -47,6 +47,8 @@ def checkout(cart, coupons)
   total_discounts = apply_clearance(cart_with_coupons_applied)
   total = 0 
   total_discounts.each do |item|
+    total_of_same_item = item[:price] * item[:count]
+    total+= total_of_same_item
     binding.pry 
   end
   
