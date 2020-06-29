@@ -4,7 +4,7 @@ def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-
+   binding.pry
   if(cart[:item] == coupons[:item])
   
   binding.pry
