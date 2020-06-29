@@ -50,5 +50,8 @@ def checkout(cart, coupons)
     total_of_same_item = item[:price] * item[:count]
     total+= total_of_same_item
   end
+  if(total > 100)
+  total-= (total * .10)
+  end
   total
 end
