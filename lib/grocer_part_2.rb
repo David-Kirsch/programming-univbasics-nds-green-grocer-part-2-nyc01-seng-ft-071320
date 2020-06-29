@@ -4,11 +4,11 @@ def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-   binding.pry
+
    cart.each do |cart_item|
      coupons.each do |discount_item|
        if(cart_item[:item] == discount_item[:item])
-         
+         binding.pry
        end
      end
    end
