@@ -9,7 +9,9 @@ def apply_coupons(cart, coupons)
      coupon = {:item = nil, :price = nil, :count = nil}
      coupons.each do |discount_item|
        if(cart_item[:item] == discount_item[:item])
-         coupon[:item] = "#{cart_item[:item]} W"
+         coupon[:item] = "#{cart_item[:item]} W/COUPON"
+         coupon[:price] = discount_item[:cost] / discount_item[:num]
+         coupon[:]
          binding.pry
        end
      end
