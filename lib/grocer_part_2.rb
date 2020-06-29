@@ -13,8 +13,9 @@ def apply_coupons(cart, coupons)
          coupon[:price] = discount_item[:cost] / discount_item[:num]
          coupon[:clearance] = cart_item[:clearance]
          coupon[:count] = discount_item[:num]
+         cart.push coupon
        end
-       cart.push coupon
+       
      end
      binding.pry
    end
