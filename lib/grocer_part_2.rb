@@ -49,7 +49,6 @@ def checkout(cart, coupons)
   total_discounts.each do |item|
     total_of_same_item = item[:price] * item[:count]
     total+= total_of_same_item
-    binding.pry 
   end
   
 end
