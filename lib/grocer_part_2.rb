@@ -6,8 +6,10 @@ def apply_coupons(cart, coupons)
   # REMEMBER: This method **should** update cart
 
    cart.each do |cart_item|
+     coupon = {:item = nil, :price = nil, :count = nil}
      coupons.each do |discount_item|
        if(cart_item[:item] == discount_item[:item])
+         coupon[:item] = 
          binding.pry
        end
      end
