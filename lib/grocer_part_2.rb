@@ -16,13 +16,9 @@ def apply_coupons(cart, coupons)
          cart_item[:count] = 1
          cart.push coupon
        end
-       
      end
-     binding.pry
    end
-    binding.pry
    cart
-  
 end
 
 def apply_clearance(cart)
