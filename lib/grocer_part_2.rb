@@ -5,10 +5,13 @@ def apply_coupons(cart, coupons)
   #
   # REMEMBER: This method **should** update cart
    binding.pry
-  if(cart[:item] == coupons[:item])
-  
-  binding.pry
-end
+   cart.each do |cart_item|
+     coupons.each do |discount_item|
+       if(cart_item[:item] == discount_item[:item])
+         
+       end
+     end
+   end
 end
 
 def apply_clearance(cart)
